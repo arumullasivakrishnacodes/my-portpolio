@@ -1,0 +1,338 @@
+.about-introduction-section {
+    padding: 7% 0;
+
+    .head-name-desc {
+        font-family: "Kaushan Script", cursive;
+        font-size: 42px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+        text-align: start;
+    }
+
+    .head-fullname {
+        font-family: "Kaushan Script", cursive;
+        font-size: 46px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        color: #149199;
+        margin-bottom: 2rem;
+        text-align: start;
+    }
+
+    .explore-projects {
+        width: fit-content;
+        padding: 1% 4%;
+        height: 54px;
+        border-radius: 10px;
+        border: 0;
+        background: #149199;
+        color: #fff;
+        font-size: 20px;
+        letter-spacing: 2px;
+
+        &:hover {
+            background: #88ebf2;
+        }
+    
+        &:active {
+            outline: none !important; 
+        }
+    }
+
+    .desc-me {
+        font-size: 16px;
+        letter-spacing: 3px;
+        color: #616e7e;
+        text-align: start;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 4rem;
+    }
+
+    .aboutdeveloperimg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.skills-bg-container {
+    background: whitesmoke;
+    padding: 4% 0;
+    margin: 2rem;
+}
+
+.technicalskills-section {
+    .heading {
+        font-family: "Kaushan Script", cursive;
+        font-size: 42px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 3px;
+        margin-bottom: 1.5%;
+    }
+
+    .underline {
+        width: 12%;
+        height: 4px;
+        border-radius: 20px;
+        background: #149199;
+        margin-bottom: 6rem;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+
+        .skill-title {
+            font-family: "Poppins", sans-serif;
+            color: #3c3c3c;
+            margin-bottom: 2rem;
+            text-align: start;
+        }
+
+        .eachskillset-container {
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+            width: 100%;
+            height: fit-content;
+            padding: 1% 2%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            column-gap: 2%;
+            padding: 4% 6%;
+            border-radius: 10px;
+            transition: all 0.6s ease;
+
+            &:hover {
+                transform: translateY(-8px);
+            }
+        }
+
+        .eachskill-tabs-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .eachskill-tabs {
+            width: fit-content;
+            padding: 1% 2%;
+            background: lightgray;
+            color: #3c3c3c;
+            font-family: "Poppins", sans-serif;
+            letter-spacing: 2px;
+            font-weight: 400;
+            border-radius: 5px;
+        }
+    }
+}
+
+.contact-bg-container {
+    background: #14919929;
+    padding: 4% 0;
+
+    .contact-me-section {
+        .heading {
+            font-family: "Kaushan Script", cursive;
+            font-size: 42px;
+            font-weight: 600;
+            color: #000;
+            letter-spacing: 3px;
+            margin-bottom: 1.5%;
+        }
+    
+        .underline {
+            width: 12%;
+            height: 4px;
+            border-radius: 20px;
+            background: #149199;
+            margin-bottom: 6rem;
+        }
+    }
+
+    .my-mobile, .my-website, .my-email, .my-address {
+        width: 100%;
+        height: 50px;
+        background: lightgray;
+        border: 1px solid gray;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 2%;
+        padding: 0 2%;
+        margin-bottom: 1.5rem;
+        border-radius: 8px;
+
+        p {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .social-icons-container {
+        justify-content: center;
+        column-gap: 2rem;
+
+        i {
+            font-size: 20px;
+            color: #149199;
+            cursor: pointer;
+            transition: all 0.6s ease;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    .contact-form-container {
+        .conatct-name, .contact-email{
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            background: lightgray;
+            border: 1px solid gray;
+            padding: 0 2%;
+            margin-bottom: 1.5rem;
+            font-family: "Poppins", sans-serif;
+
+            &::placeholder {
+                color: #616e7e;
+            }
+        }
+
+        .contact-message {
+            width: 100%;
+            height: 125px;
+            border-radius: 8px;
+            background: lightgray;
+            border: 1px solid gray;
+            padding: 1% 2%;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            font-family: "Poppins", sans-serif;
+
+            &::placeholder {
+                color: #616e7e;
+            }
+        }
+
+        .contact-submit {
+            width: 100%;
+            height: 40px;
+            background: #149199;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #195f64;
+            color: #ffffff;
+            font-family: "Poppins", sans-serif;
+            border-radius: 8px;
+
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}
+
+.education-bg-container {
+    .heading {
+        font-family: "Kaushan Script", cursive;
+        font-size: 42px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 3px;
+        margin-bottom: 1.5%;
+    }
+
+    .underline {
+        width: 12%;
+        height: 4px;
+        border-radius: 20px;
+        background: #149199;
+        margin-bottom: 4rem;
+    }
+
+    .education-row-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .education-row {
+        min-width: 96%;
+        height: 30rem;
+        background: #222;
+        margin: 0 1%;
+        padding: 4% 2%;
+        border-radius: 10px;
+        margin-bottom: 4rem;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+
+        .holder {
+            width: 46%;
+            height: 36%;
+            border-radius: 50%;
+            background: #fff;
+            padding: 2%;
+            margin-bottom: 4%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .collegeName {
+            width: 100%;
+            font-size: 24px;
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+        }
+
+        .collegeYear {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .collegepercentage {
+            background: #fff;
+            padding: 2% 4%;
+            color: #3c3c3c;
+            letter-spacing: 2px;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .collegecource {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        .collegeaddress {
+            font-family: "Poppins", sans-serif;
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+    }
+}

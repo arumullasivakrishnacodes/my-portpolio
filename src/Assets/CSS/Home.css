@@ -1,0 +1,79 @@
+.name-heading {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 1px 2px 7px #9eb2c7;
+    font-size: 64px;
+    color: #223f41;
+    margin-bottom: 2rem;
+    letter-spacing: 6px;
+    text-align: start;
+}
+
+.developer {
+    color: #324d67;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: 6px;
+    text-align: start;
+}
+
+.global-social-icons {
+    column-gap: 30px;
+    margin-bottom: 2rem;
+
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+    svg {
+        width: 100%;
+        height: 100%;
+        color: #149199;
+        cursor: pointer;
+
+        &:hover {
+            color: #88ebf2;
+        }
+    }
+}
+
+.more-about {
+    width: 59%;
+    height: 60px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 4px 25px;
+    background: #149199;
+    color: #fff;
+
+    &:hover {
+        background: #88ebf2;
+    }
+
+    &:active {
+        outline: none;
+    }
+}
+
+.home-hero-section {
+    height: 80vh;
+}
+
+.hero-left-section {
+    justify-content: center;
+}
+
+.hero-right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+}
