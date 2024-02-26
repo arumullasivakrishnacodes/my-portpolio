@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import {NavLink} from 'react-router-dom';
+
 function Footer () {
+  const [topButton, SetTopButton] = useState(false);
+
+  const handlePageScroll = () => {
+    SetTopButton(window.scrollY > 50);
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handlePageScroll);
+    return () => {
+      window.addEventListener('scroll', handlePageScroll);
+    };
+  },[]);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
     return (
       <div className="footer-section">
         <div className="container">
@@ -18,6 +39,7 @@ function Footer () {
           </div>
           <div className="copyright-section">© 2024 Learn with Arumulla SivaKrishna, Inc. All Rights Reserved.</div>
         </div>
+        <div className={`footer-scrolltotop ${topButton ? `` : `d-none`}`} onClick={handleScrollToTop}><i class="bi bi-arrow-up"></i></div>
       </div>
     );
 }

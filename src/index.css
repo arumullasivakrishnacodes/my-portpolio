@@ -131,4 +131,25 @@ nav {
     text-align: center;
     letter-spacing: 3px;
   }
+
+  .footer-scrolltotop {
+    padding: 4px;
+    color: #fff;
+    background: #149199;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 8%;
+    right: 4%;
+    z-index: 6;
+    cursor: pointer;
+
+    i {
+      font-size: 20px;
+    }
+  }
 }
