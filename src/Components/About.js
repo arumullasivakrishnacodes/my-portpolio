@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import '../Assets/CSS/About.css';
 import Aboutdeveloper from '../Assets/Images/aboutdeveloper.png';
 import {useNavigate} from 'react-router-dom';
 import {SkillData} from './Data';
-import Myphoto from '../Assets/Images/sivakrishna.png'
+import Myphoto from '../Assets/Images/sivakrishna.png';
+import {Experience} from '../Components/Data';
 
 function About () {
+    const [experiencetab, setExperiencetab] = useState(0);
     const navigate = useNavigate();
 
     const sendToProjects = () => {
         navigate('/projects');
+    }
+
+    const handleExperienceTab = (index) => {
+      setExperiencetab(index);
     }
 
     return (
@@ -39,6 +45,39 @@ function About () {
                 src={Aboutdeveloper}
                 alt="Developer"
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="experience-bg-container">
+          <div className="container">
+            <div className="d-flex flex-column justify-content-center align-items-center">
+              <h1 className="heading">Experience</h1>
+              <div className="underline"></div>
+            </div>
+
+            <div className="row">
+              <div className="col-3 d-flex flex-column justify-content-start align-items-start experience-left-section">
+                {
+                  Experience.map((eachexperience,index) => {
+                    return (
+                      <div key={index} className={`projectname ${index === experiencetab ? `active`:``} `} onClick={() => handleExperienceTab(index)} title={eachexperience.title.toLowerCase()}>{eachexperience.title}</div>
+                    )
+                  })
+                }
+              </div>
+              <div className="col-9 experience-right-section">
+                <div className="expdesignation">{Experience[experiencetab].role}</div>
+                <div className="expdesignation">{Experience[experiencetab].title}</div>
+                <div className="expdesignation">{Experience[experiencetab].year}</div>
+                {
+                  Experience[experiencetab].work.map((eachwork,index) => {
+                    return (
+                      <div key={index} className="expeachwork">{eachwork}</div>
+                    )
+                  })
+                }
+              </div>
             </div>
           </div>
         </div>
@@ -84,12 +123,14 @@ function About () {
                 <p className="collegeName">YOGI VEMANA UNIVERSITY</p>
                 <p className="collegeYear">2017 - 2021</p>
                 <div className="collegepercentage">Percentage: 76.8%</div>
-                <p className="collegecource">Bachelor of Technology in Mechanical Engineering</p>
+                <p className="collegecource">
+                  Bachelor of Technology in Mechanical Engineering
+                </p>
                 <p className="collegeaddress">Kadapa, AP, India</p>
               </div>
 
               <div className="col-4 education-row d-flex flex-column">
-              <div className="holder">
+                <div className="holder">
                   <img src={Myphoto} alt="SivaKrishna" />
                 </div>
                 <p className="collegeName">SRI CHAITANYS Jr COLLEGE</p>
@@ -100,7 +141,7 @@ function About () {
               </div>
 
               <div className="col-4 education-row d-flex flex-column">
-              <div className="holder">
+                <div className="holder">
                   <img src={Myphoto} alt="SivaKrishna" />
                 </div>
                 <p className="collegeName">APSWERIS Chillakur</p>
@@ -109,7 +150,6 @@ function About () {
                 <p className="collegecource">SSC, High School</p>
                 <p className="collegeaddress">Nellore, AP, India</p>
               </div>
-
             </div>
           </div>
         </div>
@@ -124,26 +164,26 @@ function About () {
             <div className="row">
               <div className="col-6 ">
                 <div className="my-mobile d-flex">
-                  <i class="bi bi-phone"></i>
+                  <i className="bi bi-phone"></i>
                   <p>+91 8125127733</p>
                 </div>
                 <div className="my-website d-flex">
-                  <i class="bi bi-globe2"></i>
+                  <i className="bi bi-globe2"></i>
                   <p>https://developcodepro.com/</p>
                 </div>
                 <div className="my-email d-flex">
-                  <i class="bi bi-envelope"></i>
+                  <i className="bi bi-envelope"></i>
                   <p>arumullasivakrishna@outlook.com</p>
                 </div>
                 <div className="my-address d-flex">
-                  <i class="bi bi-house"></i>
+                  <i className="bi bi-house"></i>
                   <p>SPSR Nellore, AndhraPradesh, India</p>
                 </div>
                 <div className="social-icons-container d-flex">
-                  <i class="bi bi-youtube"></i>
-                  <i class="bi bi-linkedin"></i>
-                  <i class="bi bi-instagram"></i>
-                  <i class="bi bi-github"></i>
+                  <i className="bi bi-youtube"></i>
+                  <i className="bi bi-linkedin"></i>
+                  <i className="bi bi-instagram"></i>
+                  <i className="bi bi-github"></i>
                 </div>
               </div>
               <div className="col-6 d-flex flex-column contact-form-container">
