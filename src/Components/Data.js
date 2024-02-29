@@ -25,7 +25,7 @@ export const Experience = [
     {
         title: 'MiabyTanishq',
         role: 'Salesforce B2C Commerce Cloud Developer',
-        year: '2023 - 2024',
+        year: '2023 - Present',
         work: [
             
             'Solution Designing, Feasibility Analysis & POCs',
@@ -68,4 +68,12 @@ export const Experience = [
             
         ]
     },
+]
+
+
+export const MyCertificates = [
+    'Certified Salesforce B2C Commerce Cloud',
+    'HackerRank Certified React Developer',
+    'HackerRank Certified Javascript Developer',
+    'HackerRank Certified FrontEnd Developer Developer',
 ]
