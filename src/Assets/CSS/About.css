@@ -59,6 +59,7 @@
     background: whitesmoke;
     padding: 4% 0;
     margin: 2rem;
+    margin-bottom: 0;
 }
 
 .technicalskills-section {
@@ -385,6 +386,99 @@
         .projectname.active {
             border-left: 3px solid #2caeba;
             color: #149199;
+        }
+    }
+
+    .experience-right-section {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+
+        .expdesignation {
+            font-family: "Poppins", sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .exptitle {
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            background: #dae2ec;
+            border: 0;
+            color: #617d98;
+            width: fit-content;
+            padding: 6px 18px;
+            border-radius: 10px;
+            letter-spacing: 1px;
+        }
+
+        .expyear {
+            font-family: "Poppins", sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .expeachwordk-section {
+            display: flex;
+            column-gap: 2rem;
+
+            i {
+                color: #2caeba;
+                font-size: 20px;
+            }
+
+            .expeachwork {
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.cetificate-bg-container {
+    background: #14919929;
+    padding: 4% 0;
+    margin-bottom: 4rem;
+
+    .heading {
+        font-family: "Kaushan Script", cursive;
+        font-size: 42px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 3px;
+        margin-bottom: 1.5%;
+    }
+
+    .underline {
+        width: 12%;
+        height: 4px;
+        border-radius: 20px;
+        background: #149199;
+        margin-bottom: 6rem;
+    }
+
+    .certificates-section {
+        margin-bottom: 4rem;
+        gap: 14px;
+
+        .eachcertificate {
+            max-width: 46%;
+            padding: 1rem 2rem;
+            border: lightgray;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            box-shadow: inset 0 0 18px #565151;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

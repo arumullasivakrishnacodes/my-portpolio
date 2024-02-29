@@ -5,6 +5,7 @@ import {useNavigate} from 'react-router-dom';
 import {SkillData} from './Data';
 import Myphoto from '../Assets/Images/sivakrishna.png';
 import {Experience} from '../Components/Data';
+import {MyCertificates} from '../Components/Data'
 
 function About () {
     const [experiencetab, setExperiencetab] = useState(0);
@@ -58,25 +59,41 @@ function About () {
 
             <div className="row">
               <div className="col-3 d-flex flex-column justify-content-start align-items-start experience-left-section">
-                {
-                  Experience.map((eachexperience,index) => {
-                    return (
-                      <div key={index} className={`projectname ${index === experiencetab ? `active`:``} `} onClick={() => handleExperienceTab(index)} title={eachexperience.title.toLowerCase()}>{eachexperience.title}</div>
-                    )
-                  })
-                }
+                {Experience.map((eachexperience, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className={`projectname ${
+                        index === experiencetab ? `active` : ``
+                      } `}
+                      onClick={() => handleExperienceTab(index)}
+                      title={eachexperience.title.toLowerCase()}
+                    >
+                      {eachexperience.title}
+                    </div>
+                  );
+                })}
               </div>
               <div className="col-9 experience-right-section">
-                <div className="expdesignation">{Experience[experiencetab].role}</div>
-                <div className="expdesignation">{Experience[experiencetab].title}</div>
-                <div className="expdesignation">{Experience[experiencetab].year}</div>
-                {
-                  Experience[experiencetab].work.map((eachwork,index) => {
-                    return (
-                      <div key={index} className="expeachwork">{eachwork}</div>
-                    )
-                  })
-                }
+                <div className="expdesignation">
+                  {Experience[experiencetab].role}
+                </div>
+                <div className="exptitle">
+                  {Experience[experiencetab].title}
+                </div>
+                <div className="expyear">
+                  {Experience[experiencetab].year}
+                </div>
+                {Experience[experiencetab].work.map((eachwork, index) => {
+                  return (
+                    <div className="expeachwordk-section">
+                      <i class="bi bi-chevron-double-right"></i>
+                      <div key={index} className="expeachwork">
+                      {eachwork}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -102,6 +119,24 @@ function About () {
                         );
                       })}
                     </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div className="cetificate-bg-container">
+          <div className="container">
+            <div className="d-flex flex-column justify-content-center align-items-center">
+              <h1 className="heading">Certifications</h1>
+              <div className="underline"></div>
+            </div>
+            <div className="row certificates-section">
+              {MyCertificates.map((eachcertificate, index) => {
+                return (
+                  <div key={index} className="eachcertificate col-6">
+                    {eachcertificate}
                   </div>
                 );
               })}
