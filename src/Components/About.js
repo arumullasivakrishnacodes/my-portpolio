@@ -9,21 +9,31 @@ import {MyCertificates} from '../Components/Data'
 
 function About () {
     const [experiencetab, setExperiencetab] = useState(0);
+    const [mobileexpdrop, Setmobileexpdrop] = useState(false);
+    const [mobileexpselect, Setmobileexpselect] = useState('MiabyTanishq')
     const navigate = useNavigate();
 
     const sendToProjects = () => {
         navigate('/projects');
     }
 
-    const handleExperienceTab = (index) => {
-      setExperiencetab(index);
+    const handlemobileexp = () => {
+      Setmobileexpdrop(!mobileexpdrop)
     }
+
+    const handleExperienceTab = (index,etitle) => {
+      setExperiencetab(index);
+      Setmobileexpselect(etitle);
+      handlemobileexp()
+    }
+
+    
 
     return (
       <div className="about-page-section">
         <div className="container">
           <div className="row about-introduction-section">
-            <div className="col-6 d-flex justify-content-start flex-column">
+            <div className="col-lg-6 col-12 d-flex justify-content-start flex-column">
               <h3 className="head-name-desc">My name is </h3>
               <h3 className="head-fullname">Arumulla SivaKrishna</h3>
               <p className="desc-me">
@@ -40,7 +50,7 @@ function About () {
                 Explore My Projects
               </button>
             </div>
-            <div className="col-6 d-flex justify-content-center align-items-center flex-column">
+            <div className="col-6 d-none d-lg-flex justify-content-center align-items-center flex-column">
               <img
                 className="aboutdeveloperimg"
                 src={Aboutdeveloper}
@@ -58,7 +68,7 @@ function About () {
             </div>
 
             <div className="row">
-              <div className="col-3 d-flex flex-column justify-content-start align-items-start experience-left-section">
+              <div className="col-lg-3 col-12 d-none d-lg-flex flex-column justify-content-start align-items-start experience-left-section">
                 {Experience.map((eachexperience, index) => {
                   return (
                     <div
@@ -74,7 +84,21 @@ function About () {
                   );
                 })}
               </div>
-              <div className="col-9 experience-right-section">
+
+              <div className="mobile-experience-dropdown d-lg-none col-12">
+                <div className={`selected-container ${mobileexpdrop? `mobile-drop-active`:``}`} onClick={handlemobileexp}>{mobileexpselect} <i class="bi bi-chevron-down"></i></div>
+                <div className={`options-container ${mobileexpdrop? ``:`d-none`}`}>
+                  {
+                    Experience.map((eachmobileexp, index) => {
+                      return (
+                        <div className="mobile-exp-option" key={index} onClick={() => handleExperienceTab(index,eachmobileexp.title)} data-exp={eachmobileexp.title} >{eachmobileexp.title}</div>
+                      )
+                    })
+                  }
+                </div>
+              </div>
+
+              <div className="col-lg-9 col-12 experience-right-section">
                 <div className="expdesignation">
                   {Experience[experiencetab].role}
                 </div>
@@ -197,7 +221,7 @@ function About () {
             </div>
 
             <div className="row">
-              <div className="col-6 ">
+              <div className="col-lg-6 col-12">
                 <div className="my-mobile d-flex">
                   <i className="bi bi-phone"></i>
                   <p>+91 8125127733</p>
@@ -221,7 +245,7 @@ function About () {
                   <i className="bi bi-github"></i>
                 </div>
               </div>
-              <div className="col-6 d-flex flex-column contact-form-container">
+              <div className="col-lg-6 col-12 d-flex flex-column contact-form-container">
                 <input
                   type="text"
                   className="conatct-name"

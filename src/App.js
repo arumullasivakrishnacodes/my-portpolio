@@ -7,6 +7,7 @@ import Websites from './Components/Websites';
 import Navbar from './Components/Navbar';
 import Notfound from './Components/Notfound';
 import Footer from './Components/Footer';
+import '../src/Assets/CSS/mobileDevice.css'
 
 import {Routes, Route} from 'react-router-dom'
 

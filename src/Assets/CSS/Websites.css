@@ -1,0 +1,86 @@
+.main-heading-website-section {
+    .heading {
+        font-family: "Kaushan Script", cursive;
+        font-size: 42px;
+        font-weight: 600;
+        color: #000;
+        letter-spacing: 3px;
+        margin-bottom: 1.5%;
+    }
+
+    .underline {
+        width: 12%;
+        height: 4px;
+        border-radius: 20px;
+        background: #149199;
+        margin-bottom: 6rem;
+    }
+
+    .website-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 4rem;
+
+        .website-grid-items {
+            width: 100%;
+            height: 500px;
+            box-shadow: 0 0 12px #14919980;
+            border-radius: 10px;
+            padding: 4px 12px;
+        }
+
+        .website-image {
+            width: 100%;
+            height: 56%;
+        }
+
+        .website-name {
+            font-family: "Poppins", sans-serif;
+            font-size: 26px;
+            color: #223f41;
+            font-weight: 500;
+            letter-spacing: 4px;
+        }
+
+        .website-description {
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            color: #3c3c3c;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .technologies-container {
+            justify-content: center;
+            align-items: center;
+            column-gap: 12px;
+
+            .eachtech {
+                font-family: "Poppins", sans-serif;
+                font-size: 12px;
+                font-weight: 500;
+                background: #dae2ec;
+                border: 0;
+                color: #617d98;
+                width: fit-content;
+                padding: 6px 18px;
+                border-radius: 10px;
+                letter-spacing: 1px;
+            }
+        }
+
+        .explore-website {
+            color: #3c3c3c;
+            font-family: "Poppins", sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            cursor: pointer;
+
+            &:hover {
+                color: #149199;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,315 @@
+@media screen and (max-width: 768px) {
+    .site-logo {
+        width: 101px;
+        height: 41px;
+    }
+
+    .nav-main-container {
+        padding: 4%;
+        width: auto;
+        padding-right: 10%;
+    }
+
+    .hamburger-menu {
+        width: 48px;
+        height: 41px;
+    }
+
+    .hamburger-main-container {
+        width: 100%;
+        height: 120vh;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: -120%;
+        right: 0;
+        z-index: 10;
+        transition: all 0.6s ease;
+    }
+
+    .hamburger-active {
+        left: 0;
+    }
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 4%;
+        align-items: center;
+        box-shadow: 0 0 12px #14919980;
+        margin-bottom: 4rem;
+
+        .hamburger-my-photo {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+        }
+
+        i {
+            font-size: 30px;
+            color: #149199;
+        }
+    }
+
+    .mobile-menu-items {
+        padding: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 1.5rem;
+
+        a {
+            font-family: "Poppins", sans-serif;
+            font-size: 26px;
+            font-weight: 500;
+            color: #149199;
+        }
+    }
+
+    .hamburger-social-icons {
+        display: flex;
+        justify-content: center;
+        column-gap: 2rem;
+        position: absolute;
+        bottom: 16%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        i {
+            color: #149199;
+            font-size: 30px;        
+        }
+    }
+
+
+    .homepage-main-section {
+        height: fit-content;
+        margin-bottom: 4rem;
+
+        .row.h-100 {
+            height: fit-content !important;
+        }
+
+        .home-hero-section {
+            height: fit-content;
+        }
+
+        .name-heading {
+            font-size: 44px;
+            letter-spacing: 2px;
+        }
+
+        .developer {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        .more-about {
+            width: fit-content;
+            height: fit-content;
+            font-size: 16px;
+            padding: 4%;
+        }
+
+        .hero-left-section {
+            justify-content: flex-start;
+            margin-top: 24%;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .hero-left-section {
+            height: fit-content;
+        }
+    }
+
+    .main-projection-section {
+        margin-top: 28%;
+
+        .underline  {
+            width: 36%;
+            margin-bottom: 1rem;
+        }
+
+        .projects-grid-template {
+            grid-template-columns: 1fr;
+        }
+
+        .project-select {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+
+        .options-container-section {
+            width: 100%;
+        }
+    }
+
+    .main-heading-website-section {
+        margin-top: 24%;
+
+        .website-grid-container {
+            grid-template-columns: 1fr;
+        }
+
+        .underline  {
+            width: 36%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .technicalskills-section.container {
+        .underline {
+            width: 36%;
+            margin-bottom: 2rem;
+        }
+
+        .skills-container {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+    }
+
+    .cetificate-bg-container {
+        padding: 4%;
+        margin-bottom: 1rem;
+
+        .underline {
+            width: 36%;
+            margin-bottom: 2rem;
+        }
+
+        .eachcertificate  {
+            min-width: 100%;
+        }
+    }
+
+    .education-bg-container {
+        padding: 4%;
+
+        .underline {
+            width: 36%;
+            margin-bottom: 2rem;
+        }
+
+        .education-row-container {
+            grid-template-columns: 1fr;
+        }
+
+        .education-row {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .contact-bg-container {
+        .underline {
+            width: 36% !important;
+            margin-bottom: 2rem !important;
+        }
+
+        .my-mobile.d-flex {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .social-icons-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .my-mobile, .my-website, .my-email, .my-address {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .experience-bg-container {
+        margin-top: 1rem;
+
+        .underline {
+            margin-bottom: 2rem;
+            width: 36%;
+        }
+
+        .expdesignation {
+            font-size: 22px !important;
+        }
+
+        .expeachwork {
+            font-size: 14px !important;
+        }
+    }
+
+    .about-page-section {
+        margin-top: 24%;
+
+        .desc-me {
+            font-size: 12px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .mobile-experience-dropdown {
+        position: relative;
+
+        .selected-container {
+            width: 100%;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 4%;
+            border: 1px solid #223f41;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+
+            i {
+                transition: all 0.6s ease;
+            }
+        }
+
+        .mobile-drop-active i {
+            transform: rotate(180deg);
+        }
+
+        .options-container {
+            width: 92%;
+            height: fit-content;
+            border: 1px solid #223f41;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+            margin-top: 0.5rem;
+            position: absolute;
+            left: 4%;
+            background: #fff;
+            z-index: 1;
+            letter-spacing: 2px;
+            top: 3rem;
+
+            .mobile-exp-option {
+                height: 50px;
+                border-bottom: 1px solid #223f41;
+                font-family: "Poppins", sans-serif;
+                display: flex;
+                justify-content: flex-start;
+                padding: 4%;
+            }
+
+            .mobile-exp-option:last-child {
+                border-bottom: 0;
+            }
+
+            .mobile-exp-option:first-child {
+                border-top: 0;
+            }
+        }
+    }
+
+}
