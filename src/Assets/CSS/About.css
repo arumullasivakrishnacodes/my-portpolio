@@ -58,7 +58,7 @@
 .skills-bg-container {
     background: whitesmoke;
     padding: 4% 0;
-    margin: 2rem;
+    margin-top: 2rem;
     margin-bottom: 0;
 }
 
@@ -120,12 +120,12 @@
         .eachskill-tabs {
             width: fit-content;
             padding: 1% 2%;
-            background: lightgray;
             color: #3c3c3c;
             font-family: "Poppins", sans-serif;
             letter-spacing: 2px;
             font-weight: 400;
             border-radius: 5px;
+            box-shadow: inset 0 0 8px #565151;
         }
     }
 }

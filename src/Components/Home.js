@@ -16,7 +16,7 @@ function Home() {
       <div className="home-hero-section container">
 
         <div className="row h-100">
-          <div className="col-6 hero-left-section d-flex flex-column">
+          <div className="col-lg-6 col-12 hero-left-section d-flex flex-column">
             <h1 className="name-heading">I'm SivaKrishna</h1>
             <p className="developer">FrontEnd Developer</p>
             <div className="global-social-icons d-flex justify-content-start">
@@ -71,7 +71,7 @@ function Home() {
             </div>
             <button className="more-about" onClick={sendToAbout}>More About SivaKrishna</button>
           </div>
-          <div className="col-6 hero-right-section">
+          <div className="col-6 hero-right-section d-none d-lg-flex">
             <img src={developerlogo} alt="developer-logo" />
           </div>
         </div>

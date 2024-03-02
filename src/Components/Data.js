@@ -18,6 +18,10 @@ export const SkillData = [
     {
         title: 'Salesforce Commerce Cloud',
         skills: ['SFCC Architecture', 'Scripting Languages', 'Frontend Technologies', 'SFCC Business Manager']
+    },
+    {
+        title: 'Wordpress',
+        skills: ['Configuration', 'Theme Development', 'Plugin Development', 'HTML/CSS/Javascript','PHP', 'Responsive Design', 'SEO Basics', 'Performance Optimization', 'UX Design']
     }
 ]
 
@@ -75,5 +79,46 @@ export const MyCertificates = [
     'Certified Salesforce B2C Commerce Cloud',
     'HackerRank Certified React Developer',
     'HackerRank Certified Javascript Developer',
-    'HackerRank Certified FrontEnd Developer Developer',
+    'HackerRank Certified FrontEnd Developer',
+]
+
+export const MyWebsites = [
+  {
+    type: 'live',
+    title: "DevelopCodePro",
+    description: "Website Having tutorials on frontend and backend languages",
+    technologies: ["Wordpress", "PHP"],
+    image: `${process.env.PUBLIC_URL}/Assets/Images/developcodepro-logo.png`,
+    redirect: 'https://developcodepro.com/'
+  },
+];
+
+export const MyProjects = [
+    {
+        tech: 'React',
+        title: 'My Portpolio',
+        description: 'Website having all about myself Personal portpolio',
+        technologies: ['React', 'HTML & CSS', 'Javascript'],
+        image: `${process.env.PUBLIC_URL}/Assets/Images/react-logo.png`,
+        image1: `${process.env.PUBLIC_URL}/Assets/Images/portpolio-website.png`,
+        redirect: 'https://arumullasivakrishna.netlify.app/'
+    },
+    {
+        tech: 'Wordpress',
+        title: 'Develop Code',
+        description: 'Website having tutorials on react,machinelearning,wordpress etc.,',
+        technologies: ['Wordpress', 'PHP'],
+        image: `${process.env.PUBLIC_URL}/Assets/Images/wordpress-logo.png`,
+        image1: `${process.env.PUBLIC_URL}/Assets/Images/developcodepro-logo.png`,
+        redirect: 'https://developcodepro.com/'
+    },
+    {
+        tech: 'jQuery',
+        title: 'Swiper Slider',
+        description: 'Website having a dynamic good looking image slider',
+        technologies: ['jQuery', 'HTML & CSS', 'Javascript'],
+        image: `${process.env.PUBLIC_URL}/Assets/Images/jquery-logo.png`,
+        image1: `${process.env.PUBLIC_URL}/Assets/Images/swiper-slider.png`,
+        redirect: 'https://skswiperslider.netlify.app/'
+    }
 ]

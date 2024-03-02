@@ -50,11 +50,17 @@ nav {
   font-weight: 900;
   padding: 8px 12px;
   border-radius: 10px;
+
+  &:hover {
+    color: #149199;
+    border-bottom: 3px solid #149199;
+  }
+
 }
 
 .nav-items-container a.active {
-  background: #149199;
-  color: #ffffff;
+  color: #149199;
+  border-bottom: 3px solid #149199;
 }
 
 .not-found-container {
