@@ -93,6 +93,21 @@ export const MyWebsites = [
   },
 ];
 
+export const MyprojectTechnologies = [
+    {
+        tech: 'React',
+        image: `${process.env.PUBLIC_URL}/Assets/Images/react-logo.png`,
+    },
+    {
+        tech: 'jQuery',
+        image: `${process.env.PUBLIC_URL}/Assets/Images/jquery-logo.png`,
+    },
+    {
+        tech: 'Wordpress',
+        image: `${process.env.PUBLIC_URL}/Assets/Images/wordpress-logo.png`,
+    },
+]
+
 export const MyProjects = [
     {
         tech: 'React',
@@ -119,6 +134,15 @@ export const MyProjects = [
         technologies: ['jQuery', 'HTML & CSS', 'Javascript'],
         image: `${process.env.PUBLIC_URL}/Assets/Images/jquery-logo.png`,
         image1: `${process.env.PUBLIC_URL}/Assets/Images/swiper-slider.png`,
+        redirect: 'https://skswiperslider.netlify.app/'
+    },
+    {
+        tech: 'jQuery',
+        title: 'Rotating Text',
+        description: 'Website having a dynamic text rotating really advanced',
+        technologies: ['jQuery', 'HTML & CSS', 'Javascript'],
+        image: `${process.env.PUBLIC_URL}/Assets/Images/jquery-logo.png`,
+        image1: `${process.env.PUBLIC_URL}/Assets/Images/sk-rotating-text.png`,
         redirect: 'https://skswiperslider.netlify.app/'
     }
 ]
