@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../Assets/CSS/Projects.css';
-import {MyProjects} from '../Components/Data'
+import {MyProjects} from '../Components/Data';
+import {MyprojectTechnologies} from '../Components/Data';
 
 function Projects () {
     const [selectclass, setselectclass] = useState(false);
@@ -45,7 +46,7 @@ function Projects () {
                     <div className={`${selectclass ? `option-active`: ``} options-container-section`}>
                         <div className="project-option" data-tech="All" onClick={handleselectoption}><i class="bi bi-globe"></i> All</div>
                         {
-                            MyProjects.map((eachprojecttech, index) => {
+                            MyprojectTechnologies.map((eachprojecttech, index) => {
                                 return (
                                     <div key={index} className="project-option" data-tech={eachprojecttech.tech} onClick={handleselectoption}><img className="option-image" src={eachprojecttech.image} alt={eachprojecttech.tech} />{eachprojecttech.tech}</div>
                                 )
